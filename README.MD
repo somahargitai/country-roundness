@@ -15,18 +15,18 @@ This is a common approach. Assuming that a circle is the perfect round shape, we
 - given: perimeter_country, area_country
 - calculate roundness:
 
-    $$ roundness = { { area\_country } \over { area\_circle\_same\_perimeter } } $$
+$$ roundness = { { area\_country } \over { area\_circle\_same\_perimeter } } $$
 
 - roundness case 1: the country is a circle
 
-    $$ { roundness = 1 } $$
+$$ roundness = 1 $$
 
 - roundness case 2: the country is a triangle
 
-    $$ 2r\pi = 3a $$
-    $$ roundness = {{a^2\sqrt{3} \over 8} \cdot  \over r^2\pi} $$
-    $$ roundness ={ \sqrt{3} \cdot \pi \over 18} $$
-    $$ roundness = 0.302299894039036308432 $$
+$$ 2r\pi = 3a $$
+$$ roundness = {{a^2\sqrt{3} \over 8} \cdot  \over r^2\pi} $$
+$$ roundness ={ \sqrt{3} \cdot \pi \over 18} $$
+$$ roundness = 0.302299894039036308432 $$
 
 ## Method 2: Similarity to a circle with the same area
 
