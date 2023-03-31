@@ -17,10 +17,7 @@ This is a common approach. Assuming that a circle is the perfect round shape, we
 
     $$ roundness = {area\_country \over area\_circle\_same\_perimeter} $$
 
-- roundness case 1: the country is a circle
-
-    $$ roundness = 1 $$
-
+- roundness case 1: the country is a circle: roundness is one
 - roundness case 2: the country is a triangle
 
     $$ 2r\pi = 3a $$
