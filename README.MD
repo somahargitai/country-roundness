@@ -33,10 +33,13 @@ This is a common approach. Assuming that a circle is the perfect round shape, we
 This is the most common approach. Divide the perimeter of the country by the perimeter of the same area circle.
 
 - calculate roundness:
-    $$ roundness = perimeter_sameAreaCircle \over perimeter_country $$
-- roundness case 1: the country is a circle
+    $$ roundness = perimeter\_sameAreaCircle \over perimeter\_country $$
+
 
    $$ roundness = 1 $$
+
+- roundness case 1: the country is a circle
+
 
 - roundness case 2: the country is a triangle
 
