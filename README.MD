@@ -15,9 +15,9 @@ This is a common approach. Assuming that a circle is the perfect round shape, we
 - given: perimeter_country, area_country
 - calculate roundness:
 
-  $$ roundness = {{area\_country}\over{area\_circle\_same\_perimeter}} $$
-
 - roundness case 1: the country is a circle, so $ roundness = 1 $
+
+$$ roundness = {{area\_country}\over{area\_circle\_same\_perimeter}} $$
 
 - roundness case 2: the country is a triangle
 
