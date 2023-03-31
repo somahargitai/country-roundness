@@ -19,12 +19,10 @@ This is a common approach. Assuming that a circle is the perfect round shape, we
     roundness = 1
 - roundness case 2: the country is a triangle
 
-```math
-2*r*pi = 3*a
-roundness = a*a*sqrt(3)/8 /(r*r*pi)
-
-roundness = sqrt(3)*pi/18 = 0.302299894039036308432
-```
+$$ 2r\pi = 3a $$
+$$ roundness = {{a^2\sqrt{3} \over 8} \cdot  \over r^2\pi} $$
+$$ roundness ={ \sqrt{3} \cdot \pi \over 18} $$
+$$ roundness = 0.302299894039036308432 $$
 
 ## Method 2: Similarity to a circle with the same area
 
@@ -36,11 +34,11 @@ This is the most common approach. Divide the perimeter of the country by the per
     roundness = 1
 - roundness case 2: the country is a triangle
 
-```math
-    r*r*pi = (a/2)*(a*sqrt(3)/2)/2
-    roundness =  (2*r*pi) / (3 * a) = sqrt( sqrt(3) * pi / 18 )
-    roundness = 0.5498180553956338640
-```
+$$ r^2pi =  {{{a\over2}\cdot{a\sqrt3 \over 2}} \over 2} $$
+
+$$ roundness =  {2r\pi \over 3a} = \sqrt{ \sqrt{3} \cdot \pi \over 18 } $$
+
+$$ roundness = 0.549818055395633864 $$
 
 This is actually the square root of the previous one
 
