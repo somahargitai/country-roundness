@@ -14,9 +14,13 @@ This is a common approach. Assuming that a circle is the perfect round shape, we
 
 - given: perimeter_country, area_country
 - calculate roundness:
+
     $$ roundness = {area\_country \over area\_circle\_same\_perimeter} $$
+
 - roundness case 1: the country is a circle
+
    $$ roundness = 1 $$
+
 - roundness case 2: the country is a triangle
 
 $$ 2r\pi = 3a $$
@@ -61,8 +65,6 @@ As in our case we have a polygon, there are no unequivocal tangents at the verti
 
 __So let's approach it like this__: we draw a circle which has the country centroid as center. We draw as many radius lines as possible. We take the intersections of the radius lines with the country border. We calculate the slope of the polygon sides at each intersection. We calculate the slope of the tangent line of a circle in the point(s) defined by the same radius. We calculate the deviations of the two slopes. Perpendicularity means the maximum deviation, parallelism means the minimum deviation. Which means we take 1 as parallelism (0 degree) and 0 as perpendicularity (90 degree), so we should project 90 to zero degree to zero to 1 scale. We are normalizing the angles, so we don't have to take absolute values. Having the average of the deviations, we get the roundness of the country as
 $$ 1 - average\_of\_deviations $$
-
- 
 
 __note__: _We may consider using the square root of the average of the deviations to show the roundness more clearly._
 
