@@ -13,11 +13,11 @@ The answer is: You don't. There is no objective definition of roundness. But the
 This is a common approach. Assuming that a circle is the perfect round shape, we can calculate the similarity of a country to a circle. This is done by calculating the area of the country and the area of a circle with the same perimeter. The ratio of these two areas is the similarity to a circle. The higher the ratio, the more round the country is.
 
 - given: perimeter_country, area_country
-- calculate roundness:
-
-- roundness case 1: the country is a circle, so $ roundness = 1 $
+- calculate roundness
 
 $$ roundness = {{area\_country}\over{area\_circle\_same\_perimeter}} $$
+
+- roundness case 1: the country is a circle, so $ roundness = 1 $
 
 - roundness case 2: the country is a triangle
 
