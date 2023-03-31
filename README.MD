@@ -35,7 +35,9 @@ This is the most common approach. Divide the perimeter of the country by the per
 - calculate roundness:
     $$ roundness = perimeter_sameAreaCircle \over perimeter_country $$
 - roundness case 1: the country is a circle
+
    $$ roundness = 1 $$
+
 - roundness case 2: the country is a triangle
 
 $$ r^2pi =  {{{a\over2}\cdot{a\sqrt3 \over 2}} \over 2} $$
