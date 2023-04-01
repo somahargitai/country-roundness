@@ -12,14 +12,14 @@ The answer is: You don't. There is no objective definition of roundness. But the
 
 This is a common approach. Assuming that a circle is the perfect round shape, we can calculate the similarity of a country to a circle. This is done by calculating the area of the country and the area of a circle with the same perimeter. The ratio of these two areas is the similarity to a circle. The higher the ratio, the more round the country is.
 
-- given: perimeter_country, area_country
+- given: perimeter of country, area of country
 - calculate roundness
 
-  $$ roundness = {\text{area\_country} \over \text{circle\_same\_perimeter}} $$
+  $$ roundness = {\text{area of country} \over \text{ are of circle with  same perimeter}} $$
 
 - roundness case 1: the country is a circle, so
 
-$$ \text{roundness\_measured} = 1 $$
+$$ roundness = 1 $$
 
 - roundness case 2: the country is a triangle
 
@@ -33,7 +33,7 @@ $$ roundness = 0.302299894039036308432 $$
 This is the most common approach. Divide the perimeter of the country by the perimeter of the same area circle.
 
 - calculate roundness:
-  $$ roundness = perimeter_sameAreaCircle \over perimeter_country $$
+  $$ roundness = {\text{perimeter of same area circle} \over \text{perimeter of country}} $$
 
 - roundness case 1: the country is a circle, so $ roundness = 1 $
 
@@ -65,7 +65,8 @@ In case of mathematical country borders, we would have shapes with mathematical 
 As in our case we have a polygon, there are no unequivocal tangents at the vertices, but we can use the sides as tangents (and ignore vertices). We would consider a regular polygon with lots of sides a good approximation of a circle, hence round.
 
 **So let's approach it like this**: we draw a circle which has the country centroid as center. We draw as many radius lines as possible. We take the intersections of the radius lines with the country border. We calculate the slope of the polygon sides at each intersection. We calculate the slope of the tangent line of a circle in the point(s) defined by the same radius. We calculate the deviations of the two slopes. Perpendicularity means the maximum deviation, parallelism means the minimum deviation. Which means we take 1 as parallelism (0 degree) and 0 as perpendicularity (90 degree), so we should project 90 to zero degree to zero to 1 scale. We are normalizing the angles, so we don't have to take absolute values. Having the average of the deviations, we get the roundness of the country as
-$$ 1 - average_of_deviations $$
+
+$$ 1 - \text{average of deviations} $$
 
 **note**: _We may consider using the square root of the average of the deviations to show the roundness more clearly._
 
