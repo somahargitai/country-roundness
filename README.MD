@@ -1,6 +1,6 @@
 # Roundness of Countries
 
-This is a simple project to show the roundness of countries. The motivation was coming from Terrible Maps, showing some funny examples about country roundness. Special thanks for the guys in the Instagram comment zone. Some guy asked how we actually calculate the roundness of a country. Answering this question made me think about the question deeper - ending up with this project and three different approaches.
+This is a simple project to show the roundness of countries. The motivation was coming from [Terrible Maps](https://www.instagram.com/p/Cn2du61LrRS/), showing some funny examples about country roundness. Special thanks for the guys in the Instagram comment zone. Some guy asked how we actually calculate the roundness of a country. Answering this question made me think about the question deeper - ending up with this project and three different approaches.
 
 ## What is the roundness?
 
