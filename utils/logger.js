@@ -7,6 +7,7 @@ const { combine, colorize, timestamp, label, printf } = format;
 
 // set default log level
 const logLevel = process.env.LOG_LEVEL || "info";
+console.log(`[LOG LEVEL]: ${logLevel}`);
 
 const logFormat = format.printf(
   (info) => `${info.timestamp} ${info.level} [${info.label}]: ${info.message}`
